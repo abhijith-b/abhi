@@ -1,9 +1,15 @@
-Hi...
-
-  This my first push to git hub from XXX.. 
-
-   this is new add from )))
-   
-
-
-change 31-07-2013
+  $invoiceObj = new IPPInvoice();
+	$lineObj = new IPPLine();
+	$sales = new IPPSalesItemLineDetail(); 
+	
+	$lineObj->Amount = 100.00;
+	$lineObj->DetailType = "SalesItemLineDetail";
+	
+	$sales->ItemRef =   8  ;
+	
+	$lineObj->SalesItemLineDetail = $sales ;
+	$invoiceObj->Line = $lineObj;
+	$invoiceObj->CustomerRef =  "3" ;
+	
+	
+	$resultingCustomerObj = $dataService->Add($invoiceObj);
