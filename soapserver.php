@@ -6,7 +6,7 @@
  $namespace = $URL . '?wsdl';
 
  $server    = new soap_server();
- $server->configureWSDL('Atlantic Data 3cx API Server' );
+ $server->configureWSDL('API Server' );
 
  function testRequest($id){
   return  array('Success' => 'kishore', 'Response' => array('key' => 'eee', 'value' =>  'id'));
