@@ -1,0 +1,35 @@
+<html>
+
+<head>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+
+</head>
+
+<body>
+<input id="firstName" type="text" />
+<input id="lastName" type="text" />
+<input id="tokenField" type="hidden" />
+<input id="submitButton" type="button" value="SEND" />
+
+<script type="application/javascript">
+
+$('#submitButton').on('click',function(){
+  alert("ssss");
+    $.ajax({
+          url: "https://api.sendgrid.com/api/mail.send.json",
+          type: 'POST',
+          data: 'to=abhijith1790@gmail.com&amp;toname=Destination&amp;subject=AbhiWorks Pages&amp;text=HI!!.there&amp;from=info@abhiworks.com&amp;api_user=abhijithab&amp;api_key=Abhi@1234' ,
+         
+          // headers: {
+          //           "Content-Type": "application/json",
+          //           "Authorization": "Bearer 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",
+          //           "Access-Control-Allow-Origin": "https://sendgrid.api-docs.io"
+          //        } 
+          
+    });
+  });
+</script>
+
+</body>
+</html>
