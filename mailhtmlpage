@@ -17,15 +17,11 @@
 $('#submitButton').on('click',function(){
   alert("ssss");
     $.ajax({
-          url: "https://api.sendgrid.com/api/mail.send.json",
+          url: " ",
           type: 'POST',
-          data: 'to=abhijith1790@gmail.com&amp;toname=Destination&amp;subject=AbhiWorks Pages&amp;text=HI!!.there&amp;from=info@abhiworks.com&amp;api_user=abhijithab&amp;api_key=Abhi@1234' ,
+          data: 'to=abhijith1790@gmail.com&amp;toname=Destination&amp;subject=AbhiWorks Pages&hiworks.com&;' ,
          
-          // headers: {
-          //           "Content-Type": "application/json",
-          //           "Authorization": "Bearer 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",
-          //           "Access-Control-Allow-Origin": "https://sendgrid.api-docs.io"
-          //        } 
+        
           
     });
   });
